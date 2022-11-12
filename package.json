@@ -6,7 +6,7 @@
   "author": "joelvitorniino <joelprofessor13@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node src/app/app.ts",
+    "dev": "ts-node --files src/app/app.ts",
     "build": "tsc",
     "start": "node dist/app/app.js",
     "migration": "typeorm-ts-node-commonjs -d ./src/app/db/data-source.ts migration:run"
