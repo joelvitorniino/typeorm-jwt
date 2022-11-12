@@ -8,7 +8,8 @@
   "scripts": {
     "dev": "ts-node src/app/app.ts",
     "build": "tsc",
-    "start": "node dist/app/app.js"
+    "start": "node dist/app/app.js",
+    "migration": "typeorm-ts-node-commonjs -d ./src/app/db/data-source.ts migration:run"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.2",

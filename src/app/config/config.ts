@@ -12,6 +12,6 @@ export const configDatabase: DataSourceOptions = {
     database: 'ts-jwt',
     logging: false,
     entities: ["src/app/models/*.ts"],
-    migrations: ["src/app/db/migration/*.ts"],
-    migrationsTableName: "users",
+    migrations: ["src/app/db/migrations/*.ts"],
+    migrationsTableName: "users_tb",
 }
