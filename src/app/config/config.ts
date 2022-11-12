@@ -1,8 +1,9 @@
 import { config } from "dotenv"
+import { DataSourceOptions } from "typeorm";
 
 config();
 
-export const configDatabase = {
+export const configDatabase: DataSourceOptions = {
     type: 'postgres',
     host: process.env.POSTGRE_HOST,
     port: 5432,
